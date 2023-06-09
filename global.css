@@ -1,0 +1,186 @@
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+:root {
+	font-size: 16px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input{
+    box-shadow: none !important;
+    outline: none;
+}
+
+body {
+    font-family: 'Baloo Tamma 2', cursive;
+	background-color: #f5f5f5;
+}
+
+a {
+	text-decoration: none;
+    color: #bbb;
+}
+
+.sidebar{
+    border-right: 2px solid #eee;
+}
+
+.follows {
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	margin: 1rem 0;
+}
+
+.preview__profile{
+	border-right: 2px solid #eee;
+	height: 100vh;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav > a {
+	padding: 0.5rem;
+	color: #aaa;
+	display: flex;
+	align-items: center;
+	margin: 0.5rem 0;
+	border-left: 4px solid transparent;
+}
+
+nav > a:hover {
+	color: #000;
+}
+
+nav > a > i {
+	margin: 0 2rem;
+}
+
+nav > a.active {
+	color: #161616;
+	font-weight: 700;
+	border-left: 4px solid #ff4755;
+}
+
+nav > a.active > i {
+	color: #ff4755;
+}
+
+.logo {
+	font-size: 1.5rem;
+	color: #161616;
+	margin: 1rem 0;
+	text-align: center;
+	font-family: "Pacifico", cursive;
+}
+
+.logo i {
+	color: #ff4755;
+}
+
+.sub__nav {
+	margin-left: 5rem;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.album>img:last-child{
+    opacity: 0.5;
+}
+
+.search{
+    padding: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+/* .feature>.post{
+    background-color: #000;
+    height: 50vh;
+    overflow: auto;
+} */
+
+.feature img{
+    object-fit: cover;
+}
+
+.stories{
+    display: flex;
+    overflow: auto;
+    margin: 1rem 0; 
+}
+
+.story__item{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.posts{
+    margin: 1rem 0;
+}
+
+#endShow, main{
+    transition: ease-in-out 0.5s;
+}
+
+#startShow{
+    transition: ease-in-out 0.5s;
+}
+
+
+/* Keyframe */
+@keyframes showPreview{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+        z-index: -1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 1;
+    }
+}
+
+@keyframes hidePreview{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(-100%);
+        z-index: -1;
+    }
+}
+
+@keyframes formMain{
+    100%{
+        transform: translateX(-25%);
+        transition: ease-in-out 0.5s;
+    }
+}
+
+@keyframes openMain{
+    100%{
+        transform: translateX(25%);
+        transition: ease-in-out 0.5s;
+    }
+}
