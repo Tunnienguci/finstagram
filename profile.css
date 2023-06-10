@@ -1,0 +1,82 @@
+.posts{
+    width: 50%;
+    margin: 0rem auto;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.timepost{
+    font-size: 0.8rem;
+    color: #888888;
+    margin: 0.5rem auto;
+    font-weight: lighter;
+}
+
+.post__item{
+    background-color: #ececec;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.post__item-album{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: 0.5rem;
+    grid-auto-flow: dense;
+}
+
+.post__item-album img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post__item>img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.btn-view{
+    border: 1px solid #cacaca;
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-view:hover{
+    background-color: #000;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+}
+
+#account__users, #endShow{
+    cursor: pointer;
+}
+
+.account__users img{
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+.post__controls-status textarea{
+    resize: auto;
+    border: 2px solid #cacaca;
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    max-height: 20vh;
+}
+
+.post__controls-status textarea:focus{
+    transition: ease-in-out 0.5s;
+    height: 20vh;
+}
