@@ -1,0 +1,225 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="/Images/favicon120.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/Global/global.css" />
+    <link rel="stylesheet" href="detail.css" />
+    <title>Finstagram</title>
+</head>
+
+<body class="position-fixed w-100">
+    <div class="main container-fluid">
+        <div class="row">
+            <div class="sidebar col-lg-2">
+                <div class="logo p-lg-2">
+                    <p class="fw-semibold">
+                        <i class="fa-brands fa-instagram"></i> Finstagram
+                    </p>
+                </div>
+                <div class="avatar d-flex flex-column align-items-center justify-content-center">
+                    <img id="startShow" src="/Images/ava.jpg" alt="avatar" />
+                    <strong>Quach Cong Tuan</strong>
+                    <small>Hanoi, Vietnam</small>
+                </div>
+                <div class="follows row d-flex flex-row justify-content-around p-lg-3 align-items-center">
+                    <div class="follows__item col-lg-4 d-flex flex-column text-center">
+                        <strong>150</strong>
+                        <small>Posts</small>
+                    </div>
+                    <div class="follows__item col-lg-4 d-flex flex-column text-center">
+                        <strong>1764</strong>
+                        <small>Following</small>
+                    </div>
+                    <div class="follows__item col-lg-4 d-flex flex-column text-center">
+                        <strong>3051</strong>
+                        <small>Followers</small>
+                    </div>
+                </div>
+                <nav>
+                    <a class="active" href=""><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="/Explore/explore.html"><i class="fa-solid fa-magnifying-glass"></i>
+                        Explore</a>
+                    <a href="#" class="sub__nav">Trending</a>
+                    <a href="#" class="sub__nav">Top Posts</a>
+                    <a href="#" class="sub__nav">People</a>
+                    <a href="#"><i class="fa-solid fa-bell"></i> Notification</a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i> Direct</a>
+                </nav>
+            </div>
+            <div class="detail col-lg-8">
+                <a href="/Home/home.html"><i class="fa-solid fa-arrow-left-long m-lg-3 text-black-50"></i>Back to home</a>
+                <div class="post__detail">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <img src="https://www.themoviedb.org/t/p/w500/1P84p4yKTiEs4ZDBpnN3z99BiRc.jpg" alt="avatar" class="rounded-circle"/>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="fs-4 fw-bold">Zhang Ruonan</h1>
+                            <small>Beijing, China</small>
+                            <p class="my-2 fst-italic">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium voluptas obcaecati quidem, porro delectus qui accusamus error incidunt nihil, modi eius dolore esse non quae sint voluptatem quis assumenda?
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <a href="https://www.instagram.com/tunnienguci/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i> Instagram 
+                            </a>
+                            <a href="https://www.facebook.com/FSTunnie/" target="_blank">
+                                <i class="fa-brands fa-facebook"></i> Facebook
+                            </a>
+                            <!-- Spotify -->
+                            <a href="https://open.spotify.com/" target="_blank">
+                                <i class="fa-brands fa-spotify"></i> Spotify
+                            </a>
+                            <a href="https://www.tiktok.com/" target="_blank">
+                                <i class="fa-brands fa-tiktok"></i> Tiktok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__box">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="post__item">
+                                <div id="carouselExample" class="carousel slide">
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <img src="https://picsum.photos/300">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://picsum.photos/300/200">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <img src="https://picsum.photos/300/100">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="content__body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque labore rerum quaerat obcaecati, amet illo mollitia iure odit quos? Consectetur cum doloremque quod nemo, excepturi a exercitationem quam consequuntur!
+                                </p>
+                            </div>
+                            <div class="comment__list">
+                                <ul>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="https://picsum.photos/100" alt="avatar" class="w-100 rounded-3"/>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <h1 class="fs-6 fw-bold m-0">Zhang Ruonan</h1>
+                                                <small>2 minutes</small>
+                                                <p class="my-2 fst-italic">
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium voluptas obcaecati quidem, porro delectus qui accusamus error incidunt nihil, modi eius dolore esse non quae sint voluptatem quis assumenda?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="https://picsum.photos/100" alt="avatar" class="w-100 rounded-3"/>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <h1 class="fs-6 fw-bold m-0">Zhang Ruonan</h1>
+                                                <small>2 minutes</small>
+                                                <p class="my-2 fst-italic">
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium voluptas obcaecati quidem, porro delectus qui accusamus error incidunt nihil, modi eius dolore esse non quae sint voluptatem quis assumenda?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="https://picsum.photos/100" alt="avatar" class="w-100 rounded-3"/>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <h1 class="fs-6 fw-bold m-0">Zhang Ruonan</h1>
+                                                <small>2 minutes</small>
+                                                <p class="my-2 fst-italic">
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium voluptas obcaecati quidem, porro delectus qui accusamus error incidunt nihil, modi eius dolore esse non quae sint voluptatem quis assumenda?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <img src="https://picsum.photos/100" alt="avatar" class="w-100 rounded-3"/>
+                                            </div>
+                                            <div class="col-lg-10">
+                                                <h1 class="fs-6 fw-bold m-0">Zhang Ruonan</h1>
+                                                <small>2 minutes</small>
+                                                <p class="my-2 fst-italic">
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor accusantium voluptas obcaecati quidem, porro delectus qui accusamus error incidunt nihil, modi eius dolore esse non quae sint voluptatem quis assumenda?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="status col-lg-2">
+                <div class="news">
+                    <p class="fw-bold">Hi Username,</p>
+                    <p>Today, June 10, 2023</p>
+                    <p>
+                        <i class="fa-solid fa-temperature-half"></i>
+                        Weather: 30°C
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-face-laugh-wink"></i> Have a
+                        nice day!
+                    </p>
+                </div>
+                <p>My Friends</p>
+                <div class="list__friends">
+                    <a href="#"><img src="https://picsum.photos/100" alt="avatar"
+                            class="ava rounded-3" />Ashleynguci</a>
+                    <a href="#"><img src="https://picsum.photos/100" alt="avatar"
+                            class="ava rounded-3" />Tunnienguci</a>
+                    <a href="#"><img src="https://picsum.photos/100" alt="avatar" class="ava rounded-3" />Cicinguci</a>
+                    <a href="#"><img src="https://picsum.photos/100" alt="avatar" class="ava rounded-3" />Miminguci</a>
+                </div>
+                <p class="text-center mt-lg-4 text-black-50">
+                    Copyright ©2023 TuanQC
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="api.js"></script> -->
+    <script src="details.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

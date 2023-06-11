@@ -1,6 +1,4 @@
-/** @format */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
 	font-size: 16px;
 }
@@ -88,7 +86,6 @@ nav > a.active > i {
 	color: #161616;
 	margin: 1rem 0;
 	text-align: center;
-	/* font-family: "Pacifico", cursive; */
 }
 
 .logo i {
@@ -224,14 +221,6 @@ nav > a.active > i {
     margin: 0.5rem 0;
 }
 
-.posts{
-    border-bottom: 2px solid #eee;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem 0;
-    height: 50vh;
-    overflow-y: auto;
-}
-
 #endShow, main{
     transition: ease-in-out 0.5s;
 }
@@ -240,6 +229,8 @@ nav > a.active > i {
     transition: ease-in-out 0.5s;
 }
 
+
+/* Explore */
 .explore{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -271,6 +262,46 @@ nav > a.active > i {
     filter: brightness(0.5);
 }
 
+.explore__bars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1rem;
+    display: none;
+}
+
+img:hover+.explore__bars{
+    display: block;
+}
+
+.btn__redirect-left{
+    color: #ff4755;
+    font-size: 1.5rem;
+    z-index: 1;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    position: sticky;
+    left: 0;
+    padding: 1rem;
+    display: none;
+}
+
+.btn__redirect-right{
+    color: #ff4755;
+    font-size: 1.5rem;
+    z-index: 1;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    position: sticky;
+    right: 0;
+    padding: 1rem;
+}
+
+
 /* Keyframe */
 @keyframes showPreview{
     0%{
@@ -290,40 +321,12 @@ nav > a.active > i {
         opacity: 1;
         transform: translateX(0);
         z-index: 1;
+        transition: ease-in-out 0.5s;
     }
     100%{
         opacity: 0;
         transform: translateX(-100%);
         z-index: -1;
-    }
-}
-
-@keyframes formMain{
-    100%{
-        transform: translateX(-25%);
-        transition: ease-in-out 0.5s;
-    }
-}
-
-@keyframes openMain{
-    100%{
-        transform: translateX(25%);
-        transition: ease-in-out 0.5s;
-    }
-}
-
-
-@keyframes openStatus {
-    100%{
-        transform: translateX(100%);
-        transition: ease-in-out 0.5s;
-    }
-}
-
-@keyframes closeStatus {
-    100%{
-        transform: translateX(-100%);
-        transition: ease-in-out 0.5s;
     }
 }
 
@@ -336,4 +339,9 @@ nav > a.active > i {
 ::-webkit-scrollbar-track {
     /* background: #eee; */
     width: 0.1px;
+}
+
+
+.stories {
+    scroll-behavior: smooth;
 }
